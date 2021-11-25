@@ -1,0 +1,9 @@
+.landing-page {
+position: relative;
+background-image: url(../components/resources/Landingpage.png);
+background-position:center;
+background-repeat: no-repeat;
+background-size: cover;
+width: vh;
+height:vh;
+}
