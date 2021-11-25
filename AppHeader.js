@@ -5,7 +5,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@mui/material/Grid';
 import Container from '@material-ui/core/Container';
-import LogoImg from './logo1.svg';
+import LogoImg from './resources/logo1.svg';
 import Button from '@mui/material/Button';
 
 
@@ -53,7 +53,7 @@ export default function AppHeader() {
   return (
 
     <Container>
-      <Box sx={{ flexGrow: 1 }}>
+      <Box sx={{ flexGrow: 1 }}></Box>
         <AppBar color="transparent" elevation={0}>
           <Toolbar>
             <Grid pt={1} pl={8}>
@@ -101,7 +101,7 @@ export default function AppHeader() {
             
           </Toolbar>
         </AppBar>
-      </Box>
+  
     </Container>
 
   );
