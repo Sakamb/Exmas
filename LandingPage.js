@@ -1,17 +1,12 @@
 import React, { Component } from 'react';
 import './LandingPage.css'
-import BannerImg from './bannerImg.svg';
+import BannerImg from './resources/bannerImg.svg';
 import Container from '@material-ui/core/Container';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { makeStyles } from '@mui/styles';
-import { alpha } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import BottomImg from './bottom.svg';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
-
-
 
 import {
   withRouter,
@@ -29,13 +24,9 @@ const slogan = makeStyles({
 
 });
 
-
-
 const bannerGrid = makeStyles({
   root: {
-    padding: "180px 110px",
-
-
+    padding: "180px 100px",
   },
 });
 
@@ -50,23 +41,10 @@ const TryNowButton = makeStyles({
     maxWidth: '1em', minWidth: '8em', minHeight: '1em',
     borderRadius: 8
   },
-
-
-
 });
 
 
 
-const rectangle = {
-
-  position: 'absolute',
-
-  left: '0px;',
-  top: '584px',
-
-  //background: '#FFFFFF',
-
-};
 
 
 const theme = createTheme({
@@ -83,11 +61,7 @@ const theme = createTheme({
 
 const bannerImageResponsive = {
   [theme.breakpoints.between('xs', 'md')]: {
-
-
-
   }
-
 }
 
 
@@ -101,18 +75,15 @@ export default function LandingPage() {
   return (
     <div className="landing-page"  >
       <Container>
-        
-
         <Grid className={banner_class.root}  /* justifyContent="space-evenly" */ container spacing={0}>
 
           <Grid sx={{ ...bannerImageResponsive }} item-image xs={5}>
-            <img src={BannerImg} alt="bannerImage" style={{ height: "55vh", width: "55vh" }} />
+            <img src={BannerImg} alt="bannerImage" style={{ height: "25rem", width: "25rem" }} />
           </Grid>
           <Grid container rowSpacing={6} item-slogan xs={7} justifyContent="center" alignContent="center" >
             <Typography Font
               roboto color="common.white" align="center" className={banner_slogan.sloganText} sx={{ lineHeight: 1.2 }} >
-              Manage Expanses Smarter, Brighter,
-              Faster.
+              Manage Expanses Smarter, Brighter, Faster.
       </Typography>
             <Grid container item-desc xs={8} >
               <Typography className={banner_slogan.annotaion} Font
@@ -126,7 +97,7 @@ export default function LandingPage() {
             </Grid>
           </Grid>
         </Grid>
-      </Container>
+        </Container>
     </div>
 
   );
