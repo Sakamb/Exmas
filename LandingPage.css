@@ -1,13 +1,9 @@
 .landing-page {
-position: cover;
-background-image: url(../components/Landingpage.png);
+position: relative;
+background-image: url(../components/resources/Landingpage.png);
 background-position:center;
 background-repeat: no-repeat;
-background-attachment: fixed;
 background-size: cover;
 width: vh;
 height:vh;
-
-
-
 }
