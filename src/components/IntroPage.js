@@ -16,15 +16,20 @@ import {
 } from 'react-router-dom';
 
 const message = `Scan your receptit and validate your expense hassle free and append them to your claim, ready to be approved for any time`;
+const message2 = 'By leveraging blockchain technology and mobile money infrastructure, we enable users to transfer money globally in seconds.';
+const message3 = 'By leveraging blockchain technology and mobile money infrastructure, we enable users to transfer money globally in seconds.';
+const message4 = 'By leveraging blockchain technology and mobile money infrastructure, we enable users to transfer money globally in seconds.';
 
 function Item(props) {
   const { sx, ...other } = props;
   return (
     <Box
-      Font roboto style={{ color: "#524646" }}
+      style={{ color: "#524646" }}
       sx={{
         fontSize: '1rem',
-        maxWidth: 330, my: 1, mx: 1, p: 2,
+        lineHeight: 'normal', fontFamily: 'Poppins', fontSize: 15, fontWeight: 'regular', fontStyle: 'normal',
+        my: 1, mx: 1, p: 2,
+
         ...sx,
       }}
       {...other}
@@ -42,66 +47,61 @@ Item.propTypes = {
 
 export default function RowAndColumnGap() {
   return (
-  
-      <div className="into-page">
-    
-        <Typography Font roboto color="blue" fontWeight='bold'  align="center" sx={{fontSize: 18, mt: 14, mb: 10 }} style={{ color: "#2F76B9" }}>
-          Discover best opportunities to understand your expenses
+    <div className="into-page">
+      <Typography Font roboto color="blue" fontWeight='bold' align="center" sx={{ fontSize: 18, mt: 14, mb: 10 }} style={{ color: "#2F76B9" }}>
+        Discover best opportunities to understand your expenses
         </Typography>
-        <Box
-          sx={{
-            display: 'grid',
-            columnGap: 0,
-            rowGap: 10,
-            gridTemplateColumns: 'repeat(2, 2fr)',
-            mx: 4, p: 2,
-          }}>
-
-          <Item>
-            <Typography Font roboto color="blue">
-              <img src={icon1} alt="icon1" align="left" style={{ height: "4.2rem", width: "4.2rem" }} />
+      <img src={image1} alt="image1" align="right" style={{ height: "30rem", width: "30rem" }} />
+      <Box
+        sx={{
+          lineHeight: 'normal', fontFamily: 'Poppins', fontSize: 1, fontWeight: 'regular', fontStyle: 'normal',
+          display: 'grid',
+          columnGap: 0,
+          rowGap: 10,
+          gridTemplateColumns: 'repeat(2, 1fr)',
+          mx: 0, pl: 7,
+          width: 710,
+        }}>
+        <Item >
+          <img src={icon1} alt="icon1" align="left" style={{ height: "4.2rem", width: "4.2rem" }} />
+          <Typography component="div" Font roboto color="black" align="left" sx={{ my: 2, mx: 10 }}>
+            Scan Expense
             </Typography>
-            <Typography component="div" Font roboto color="black" align="left" sx={{ my: 2, mx: 10 }}>
-              Scan Expense
-            </Typography>
-            <Typography Font poppins style={{ color: "#524646" }} align="left" sx={{ fontFamily: 'Poppins', fontSize: 14, my: 1, mx: 8, pl: 2 }}>
-              {message}
-            </Typography>
-          </Item>
-          <Item sx={{ mx: -30 }} >
-            <Typography Font roboto color="blue">
-              <img src={PolicyIcon} alt="icon1" align="left" style={{ height: "4.2rem", width: "4.2rem" }} />
-            </Typography>
-            <Typography component="div" Font roboto color="black" align="left" sx={{ my: 2, mx: 10 }}>
-              Scan Expense
-            </Typography>
-            <Typography Font poppins style={{ color: "#524646" }} align="left" sx={{ fontFamily: 'Poppins', fontSize: 14, my: 1, mx: 8, pl: 2 }}>
-              {message}
-            </Typography></Item>
-          <Item> <Typography Font roboto color="blue">
-            <img src={CardIcon} alt="icon1" align="left" style={{ height: "4.2rem", width: "4.2rem" }} />
+          <Typography Font poppins style={{ color: "#524646" }} align="left" sx={{ lineHeight: 'normal', fontFamily: 'Poppins', fontSize: 16, fontWeight: 'regular', fontStyle: 'normal', my: 1, mx: 8, pl: 2 }}>
+            {message}
+          </Typography>
+        </Item>
+        <Item>
+          <img src={PolicyIcon} alt="icon1" align="left" style={{ height: "4.2rem", width: "4.2rem" }} />
+          <Typography component="div" Font roboto color="black" align="left" sx={{ my: 2, mx: 10 }}>
+          Policy Condition          
           </Typography>
             <Typography component="div" Font roboto color="black" align="left" sx={{ my: 2, mx: 10 }}>
-              Scan Expense
-            </Typography>
-            <Typography Font roboto style={{ color: "#524646" }} align="left" sx={{  fontFamily: 'Poppins',  fontSize: 14, my: 1, mx: 8, pl: 2 }}>
-              {message}
-            </Typography></Item>
-          <Item sx={{ mx: -30 }}>
-            <Typography Font roboto color="blue">
-              <img src={CloudIcon} alt="icon1" align="left" style={{ height: "4.2rem", width: "4.2rem" }} />
-            </Typography>
+          
+          </Typography>
+            <Typography Font poppins style={{ color: "#524646" }} align="left" sx={{ lineHeight: 'normal', fontFamily: 'Poppins', fontSize: 16, fontWeight: 'regular', fontStyle: 'normal', my: 1, mx: 8, pl: 2 }}>
+            {message2}
+          </Typography>
+        </Item>
+        <Item>
+          <img src={CardIcon} alt="icon1" align="left" style={{ height: "4.2rem", width: "4.2rem" }} />
             <Typography component="div" Font roboto color="black" align="left" sx={{ my: 2, mx: 10 }}>
-              Scan Expense
-            </Typography>
-            <Typography  style={{ color: "#524646" }} align="left" sx={{ lineHeight: 'normal',fontFamily: 'Poppins', fontSize: 15, fontWeight: 'regular'  , fontStyle: 'normal' , my: 1, mx: 8, pl: 2 }}>
-              {message}
-            </Typography>
-          </Item>
-        </Box>
-        <Item  sx={{ mx: 99, my: -72 }}>
-          <img src={image1}  alt="image1" align="left" style={{ height: "30rem", width: "30rem" }} />
-          </Item>
-      </div>
+            Connect Your Cards
+          </Typography>
+            <Typography Font roboto style={{ color: "#524646" }} align="left" sx={{lineHeight: 'normal', fontFamily: 'Poppins', fontSize: 16, fontWeight: 'regular', fontStyle: 'normal', my: 1, mx: 8, pl: 2 }}>
+            {message3}
+          </Typography>
+        </Item>
+        <Item sx={{}}>
+          <img src={CloudIcon} alt="icon1" align="left" style={{ height: "4.2rem", width: "4.2rem" }} />
+            <Typography component="div" Font roboto color="black" align="left" sx={{ lineHeight: 'normal', fontFamily: 'Poppins', fontSize: 16, fontWeight: 'regular', fontStyle: 'normal',my: 2, mx: 10 }}>
+            Cloud Storage          
+          </Typography>
+            <Typography style={{ color: "#524646" }} align="left" sx={{ lineHeight: 'normal', fontFamily: 'Poppins', fontSize: 16, fontWeight: 'regular', fontStyle: 'normal', my: 1, mx: 8, pl: 2 }}>
+            {message4}
+          </Typography>
+        </Item>
+      </Box>
+    </div>
   );
 }
