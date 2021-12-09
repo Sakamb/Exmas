@@ -10,14 +10,16 @@ import NotificationImg from './resources/notificationImg.svg';
 function Item1(props) {
   const { sx, ...other } = props;
   return (
-      
+
     <Box
-        sx={{
+      sx={{
         p: 1,
         borderRadius: 1,
         textAlign: 'center',
         fontSize: '1rem',
-        fontWeight: '700',  
+        fontWeight: '700',
+
+
         ...sx,
       }}
       {...other}
@@ -33,6 +35,25 @@ Item1.propTypes = {
   ]),
 };
 
+const paper = {
+
+  alignItems: 'center',
+  bgcolor: 'background.paper',
+  overflow: 'hidden',
+  borderRadius: '12px',
+  boxShadow: 1,
+  fontWeight: 'bold',
+  height: 278,
+  width: 306,
+
+}
+
+const paperImages = {
+  alignItems: 'left',
+  height: 120,
+  width: 175,
+}
+
 export default function FeaturePage() {
   return (
     <div className="intro-page">
@@ -41,158 +62,42 @@ export default function FeaturePage() {
           display: 'grid',
           gap: 1,
           gridTemplateColumns: 'repeat(3, 1fr)',
-          my: 15,   
-          alignItems: 'left',
-          height: 500,
-          width: 500,
-        //   maxHeight: { xs: 233, md: 167 },
-        //   maxWidth: { xs: 350, md: 250 },
-          left: 256,
-          top: 160,
+          alignItems: 'center',
+          maxHeight: { xs: 0, md: 167 },
+          maxWidth: { xs: 0, md: 250 },
+          left: 140,
+          top: 120,
           position: 'relative',
-        
-        }}
-      >
+        }}>
         <Item1>
-        <Box sx={{
-        alignItems: 'center',
-        bgcolor: 'background.paper',
-        overflow: 'hidden',
-        borderRadius: '12px',
-        boxShadow: 1,
-        fontWeight: 'bold',
-       
-      }}
-    >
-      <Box
-        component="img"
-        sx={{
-          alignItems: 'left',
-          height: 200,
-          width: 350,
-          maxHeight: { xs: 233, md: 167 },
-          maxWidth: { xs: 350, md: 250 },
-
-        }}
-        alt="The house from the offer."
-        src={NotificationImg}
-      />
-        </Box>
+          <Box sx={{ ...paper }}>
+            <Box component="img" sx={{ ...paperImages }} alt=" feature 1" src={NotificationImg} />
+          </Box>
         </Item1>
         <Item1>
-        <Box sx={{
-        alignItems: 'center',
-        bgcolor: 'background.paper',
-        overflow: 'hidden',
-        borderRadius: '12px',
-        boxShadow: 1,
-        fontWeight: 'bold',
-       
-      }}
-    >
-      <Box
-        component="img"
-        sx={{
-          alignItems: 'left',
-         
-
-        }}
-        alt="The house from the offer."
-        src={NotificationImg}
-      />
-        </Box>
+          <Box sx={{ ...paper }}>
+            <Box component="img" sx={{ ...paperImages }} alt="The house from the offer." src={NotificationImg} />
+          </Box>
         </Item1>
         <Item1>
-        <Box sx={{
-        alignItems: 'center',
-        bgcolor: 'background.paper',
-        overflow: 'hidden',
-        borderRadius: '12px',
-        boxShadow: 1,
-        fontWeight: 'bold',
-       
-      }}
-    >
-      <Box
-        component="img"
-        sx={{
-          alignItems: 'left',
-         
-
-        }}
-        alt="The house from the offer."
-        src={NotificationImg}
-      />
-        </Box>
+          <Box sx={{ ...paper }}>
+            <Box component="img" sx={{ ...paperImages }} alt="The house from the offer." src={NotificationImg} />
+          </Box>
         </Item1>
         <Item1>
-        <Box sx={{
-        alignItems: 'center',
-        bgcolor: 'background.paper',
-        overflow: 'hidden',
-        borderRadius: '12px',
-        boxShadow: 1,
-        fontWeight: 'bold',
-       
-      }}
-    >
-      <Box
-        component="img"
-        sx={{
-          alignItems: 'left',
-         
-
-        }}
-        alt="The house from the offer."
-        src={NotificationImg}
-      />
-        </Box>
+          <Box sx={{ ...paper }}>
+            <Box component="img" sx={{ ...paperImages }} alt="The house from the offer." src={NotificationImg} />
+          </Box>
         </Item1>
         <Item1>
-        <Box sx={{
-        alignItems: 'center',
-        bgcolor: 'background.paper',
-        overflow: 'hidden',
-        borderRadius: '12px',
-        boxShadow: 1,
-        fontWeight: 'bold',
-       
-      }}
-    >
-      <Box
-        component="img"
-        sx={{
-          alignItems: 'left',
-         
-
-        }}
-        alt="The house from the offer."
-        src={NotificationImg}
-      />
-        </Box>
+          <Box sx={{ ...paper }}>
+            <Box component="img" sx={{ ...paperImages }} alt="The house from the offer." src={NotificationImg} />
+          </Box>
         </Item1>
         <Item1>
-        <Box sx={{
-        alignItems: 'center',
-        bgcolor: 'background.paper',
-        overflow: 'hidden',
-        borderRadius: '12px',
-        boxShadow: 1,
-        fontWeight: 'bold',
-       
-      }}
-    >
-      <Box
-        component="img"
-        sx={{
-          alignItems: 'left',
-         
-
-        }}
-        alt="The house from the offer."
-        src={NotificationImg}
-      />
-        </Box>
+          <Box sx={{ ...paper }}>
+            <Box component="img" sx={{ ...paperImages }} alt="The house from the offer." src={NotificationImg} />
+          </Box>
         </Item1>
       </Box>
     </div>
